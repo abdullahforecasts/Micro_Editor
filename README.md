@@ -2,6 +2,18 @@
 
 ![Micro Editor](https://img.shields.io/badge/Micro_Editor-C%2B%2B-blue.svg)
 
+## Table of Contents
+- [Description](#description)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Keyboard Shortcuts](#keyboard-shortcuts)
+- [Example Commands](#example-commands)
+- [Requirements](#requirements)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [Author](#author)
+
 ## Description
 Micro is a lightweight text editor with a terminal-like interface, designed for simple and efficient text editing. It supports various features including text manipulation, search and replace, undo/redo functionality, and more.
 
@@ -91,6 +103,23 @@ The editor has two modes:
 ## Requirements
 - Windows OS (uses `<windows.h>` for console operations)
 - C++ compiler (tested with g++)
+
+## Project Structure
+```
+Micro_Editor/
+├── Bscs24009_Micro.cpp          # Main entry point
+├── bscs24009_Document.cpp       # Document handling
+├── bscs24009_Document.h         # Document header
+├── bscs24009_Chapters.cpp       # Chapter management
+├── bscs24009_Chapters.h         # Chapter header
+├── bscs24009_Sections.cpp       # Sections handling
+├── bscs24009_Sections.h         # Sections header
+├── bscs24009_Paragraph.cpp      # Paragraph management
+├── bscs24009_Paragraph.h        # Paragraph header
+├── bscs24009_Line.cpp           # Line operations
+├── bscs24009_Line.h             # Line header
+└── README.md                    # Documentation
+```
 
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
