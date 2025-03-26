@@ -1,0 +1,102 @@
+# Micro Text Editor
+
+![Micro Editor](https://img.shields.io/badge/Micro_Editor-C%2B%2B-blue.svg)
+
+## Description
+Micro is a lightweight text editor with a terminal-like interface, designed for simple and efficient text editing. It supports various features including text manipulation, search and replace, undo/redo functionality, and more.
+
+## Features
+
+### Basic Text Editing
+- Insert, delete, and edit text
+- Navigate using arrow keys
+- Split lines with the `Enter` key
+- Word wrapping
+
+### Document Structure
+- Support for chapters, sections, and paragraphs
+- Add new chapters with `(`
+- Add new sections with `$`
+- Add new paragraphs with `#`
+
+### Text Manipulation
+- Convert current line to uppercase `(:upper)`
+- Convert current line to lowercase `(:lower)`
+- Copy `(:copy)` and paste `(:paste)` the current line
+- Search within the document `(:s/pattern)`
+- Replace text `(:r@old/new)`
+
+### File Operations
+- Save document `(:w)`
+- Quit `(:q)`
+- Save and quit `(:wq)`
+- Force quit without saving `(:q!)`
+
+### Undo/Redo
+- Undo last operation `(:undo)`
+- Redo last undone operation `(:redo)`
+
+### Cursor Information
+- Display current line number `(:lineNumber)`
+
+## Installation
+### Clone the repository:
+```sh
+git clone https://github.com/abdullahforecasts/Micro_Editor.git
+```
+
+### Compile the project:
+```sh
+g++ -o micro Bscs24009_Micro.cpp bscs24009_Document.cpp bscs24009_Chapters.cpp bscs24009_Sections.cpp bscs24009_Paragraph.cpp bscs24009_Line.cpp -std=c++11
+```
+
+### Run the executable:
+```sh
+./micro
+```
+
+## Usage
+The editor has two modes:
+- **Sheet Mode**: Default mode for editing text
+- **Terminal Mode**: For entering commands (press `ESC` to toggle)
+
+### In Sheet Mode:
+- Use arrow keys to navigate
+- Type normally to insert text
+- Use `Backspace` to delete
+
+### In Terminal Mode:
+- Enter commands prefixed with `:`
+- Press `ESC` to return to sheet mode
+
+## Keyboard Shortcuts
+| Key          | Function                                   |
+|-------------|-------------------------------------------|
+| `ESC`       | Toggle between sheet and terminal modes  |
+| `Enter`     | Split line at cursor position            |
+| `Backspace` | Delete character                         |
+| `Arrow Keys`| Move cursor                              |
+| `(`         | Add new chapter                          |
+| `$`         | Add new section                          |
+| `#`         | Add new paragraph                        |
+
+## Example Commands
+- `:w` - Save document
+- `:q` - Quit editor
+- `:s/searchtext` - Search for "searchtext"
+- `:r@old/new` - Replace "old" with "new"
+- `:upper` - Convert current line to uppercase
+- `:undo` - Undo last operation
+
+## Requirements
+- Windows OS (uses `<windows.h>` for console operations)
+- C++ compiler (tested with g++)
+
+## Contributing
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+
+## Author
+[Abdullah](https://github.com/abdullahforecasts)
+
+Happy Coding! 🚀
+
